@@ -28,13 +28,11 @@ sass:
   load_paths:
     - _sass
     - node_modules
-plugins:
-- jekyll-menus
+gems:
+  - jekyll-menus
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
