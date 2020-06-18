@@ -1,7 +1,7 @@
 ---
 layout: default
-title: ""
-permalink: /
----
+title: Forside
+permalink: "/"
 
+---
 Hej
