@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Datatables"
-permalink: /datatables/
-menus:
-    sidenav:
-        weight: 2
----
+title: Datatables
+permalink: "/datatables/"
+menu:
+  sidenav:
+    weight: 2
 
+---
 Hej datatabses
