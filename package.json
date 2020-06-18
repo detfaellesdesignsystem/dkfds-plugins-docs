@@ -1,0 +1,26 @@
+{
+  "name": "dkfds-plugins-docs",
+  "version": "1.0.0",
+  "description": "Documentation of plugins formerly supported by FDS",
+  "main": "index.js",
+  "scripts": {
+    "copy:sass": "ncp node_modules/dkfds/src/fonts/ assets/fonts/ && ncp node_modules/dkfds/src/img/ assets/img/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/detfaellesdesignsystem/dkfds-plugins-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/detfaellesdesignsystem/dkfds-plugins-docs/issues"
+  },
+  "homepage": "https://github.com/detfaellesdesignsystem/dkfds-plugins-docs#readme",
+  "dependencies": {
+    "dkfds": "^6.1.1",
+    "dkfds-plugins": "^6.0.1",
+    "ncp": "^2.0.0"
+  }
+}
