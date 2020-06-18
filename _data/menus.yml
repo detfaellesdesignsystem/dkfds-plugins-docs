@@ -1,0 +1,7 @@
+---
+sidenav:
+- url: /
+  title: Plugins
+- url: /datatables/
+  title: Datatables
+---

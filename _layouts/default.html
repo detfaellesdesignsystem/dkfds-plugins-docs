@@ -24,13 +24,12 @@
     <!-- Slut: Løsningsheader -->
 </header>
 <div class="container page-container">
-    {{ page.permalink }}
     <div class="row">
 
         <aside class="col-12 col-lg-3 sidebar-col">
             <nav>
                 <ul class="sidenav-list" role="menu">
-                    {% for item in site.menus.header %}
+                    {% for item in site.menus.sidenav %}
                     <li class="{% if page.permalink == item.url %}active current{% endif %}" role="none">
                         <a href="{{ item.url }}" role="menuitem" title="Gå til {{ item.title }}">{{ item.title }}</a>
                     </li>
