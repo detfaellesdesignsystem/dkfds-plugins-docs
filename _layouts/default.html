@@ -30,36 +30,11 @@
         <aside class="col-12 col-lg-3 sidebar-col">
             <nav>
                 <ul class="sidenav-list" role="menu">
-                    <li role="none" class="{% if page.permalink == "/" %}active current{% endif %}">
-                        <a href="/" role="menuitem">
-                            Plugins
-                        </a>
+                    {% for item in site.menus.header %}
+                    <li class="{% if page.permalink == item.url %}active current{% endif %}" role="none">
+                        <a href="{{ item.url }}" role="menuitem" title="Gå til {{ item.title }}">{{ item.title }}</a>
                     </li>
-                    <li role="none" class="{% if page.permalink == "/datatables/" %}active current{% endif %}">
-                        <a href="/datatables/" role="menuitem">
-                            Datatables
-                        </a>
-                    </li>
-                    <li role="none" class="{% if page.permalink == "/pikaday/" %}active current{% endif %}">
-                        <a href="/pikaday/" role="menuitem">
-                            Pikaday
-                        </a>
-                    </li>
-                    <li role="none" class="{% if page.permalink == "/micromodaljs/" %}active current{% endif %}">
-                        <a href="/micromodaljs/" role="menuitem">
-                            Micromodal.js
-                        </a>
-                    </li>
-                    <li role="none" class="{% if page.permalink == "/selectwoo/" %}active current{% endif %}">
-                        <a href="/selectwoo/" role="menuitem">
-                            selectWoo
-                        </a>
-                    </li>
-                    <li role="none" class="{% if page.permalink == "/tippyjs/" %}active current{% endif %}">
-                        <a href="/tippyjs/" role="menuitem">
-                            Tippy.js
-                        </a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </nav>
         </aside>
