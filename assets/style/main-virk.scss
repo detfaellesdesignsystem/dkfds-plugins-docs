@@ -5,10 +5,10 @@ body {
   opacity: 1 !important;
 }
 
-$font-path:         '/assets/fonts/IBMPlexSans/';
-$image-path:        '/assets/img';
-$site-image-path:   '/assets/img';
-$icons-folder-path: '/assets/img/svg-icons';
+$font-path:         '/dkfds-plugins-docs/assets/fonts/IBMPlexSans/';
+$image-path:        '/dkfds-plugins-docs/assets/img';
+$site-image-path:   '/dkfds-plugins-docs/assets/img';
+$icons-folder-path: '/dkfds-plugins-docs/assets/img/svg-icons';
 
 @import 'dkfds/dkfds-virkdk';
 @import 'dkfds-tippy-theme';

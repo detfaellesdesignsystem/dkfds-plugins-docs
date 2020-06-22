@@ -95,7 +95,7 @@ let setStylesheet = function(){
     var lnk = document.createElement('link');
     lnk.type='text/css';
     lnk.rel='stylesheet';
-    lnk.href= '/assets/style/'+themeStylesheets[indexOfTheme]+'.css';
+    lnk.href= '/dkfds-plugins-docs/assets/style/'+themeStylesheets[indexOfTheme]+'.css';
 
     document.getElementsByTagName('head')[0].appendChild(lnk);
 };

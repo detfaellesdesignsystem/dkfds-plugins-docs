@@ -5,16 +5,16 @@
     <meta name="robots" content="noindex">
     <title>{{ page.title }}</title>
 
-    <link rel="preload" href="/assets/fonts/IBMPlexSans/IBMPlexSans-Medium.woff" as="font" crossorigin>
-    <link rel="preload" href="/assets/fonts/IBMPlexSans/IBMPlexSans-Bold.woff" as="font" crossorigin>
-    <link rel="preload" href="/assets/fonts/IBMPlexSans/IBMPlexSans-Regular.woff" as="font" crossorigin>
-    <link rel="preload" href="/assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
-    <link rel="preload" href="/assets/js/theme.js" as="script">
-    <link rel="preload" href="/assets/style/main-virk.css" as="style">
-    <link rel="preload" href="/assets/style/main-borgerdk.css" as="style">
-    <link rel="stylesheet" href="/assets/style/dataTables.css">
-    <link rel="stylesheet" href="/assets/style/selectWoo.css">
-    <link rel="stylesheet" href="/assets/style/tippy.css">
+    <link rel="preload" href="/dkfds-plugins-docs/assets/fonts/IBMPlexSans/IBMPlexSans-Medium.woff" as="font" crossorigin>
+    <link rel="preload" href="/dkfds-plugins-docs/assets/fonts/IBMPlexSans/IBMPlexSans-Bold.woff" as="font" crossorigin>
+    <link rel="preload" href="/dkfds-plugins-docs/assets/fonts/IBMPlexSans/IBMPlexSans-Regular.woff" as="font" crossorigin>
+    <link rel="preload" href="/dkfds-plugins-docs/assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
+    <link rel="preload" href="/dkfds-plugins-docs/assets/js/theme.js" as="script">
+    <link rel="preload" href="/dkfds-plugins-docs/assets/style/main-virk.css" as="style">
+    <link rel="preload" href="/dkfds-plugins-docs/assets/style/main-borgerdk.css" as="style">
+    <link rel="stylesheet" href="/dkfds-plugins-docs/assets/style/dataTables.css">
+    <link rel="stylesheet" href="/dkfds-plugins-docs/assets/style/selectWoo.css">
+    <link rel="stylesheet" href="/dkfds-plugins-docs/assets/style/tippy.css">
     <style>
         body {
             opacity: 0; /*hide page until theme is downloaded by js.*/
@@ -52,7 +52,7 @@
                 <ul class="sidenav-list" role="menu">
                     {% for item in site.menus.sidenav %}
                     <li class="{% if page.permalink == item.url %}active current{% endif %}" role="none">
-                        <a href="{{ item.url }}" role="menuitem" title="Gå til {{ item.title }}">{{ item.title }}</a>
+                        <a href="/dkfds-plugins-docs{{ item.url }}" role="menuitem" title="Gå til {{ item.title }}">{{ item.title }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -87,21 +87,21 @@
         </div>
     </div>
 </footer>
-<script src="/assets/js/theme.js"></script>
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/jquery.dataTables.min.js"></script>
-<script src="/assets/js/dataTables.responsive.min.js"></script>
-<script src="/assets/js/dataTables.select.min.js"></script>
-<script src="/assets/js/popper.js"></script>
-<script src="/assets/js/tippy.umd.js"></script>
-<script src="/assets/js/pikaday.js"></script>
-<script src="/assets/js/selectWoo.js"></script>
-<script src="/assets/js/dkfds.min.js"></script>
-<script src="/assets/js/micromodal.min.js"></script>
-<script src="/assets/js/example-datatables.js"></script>
-<script src="/assets/js/example-pikaday.js"></script>
-<script src="/assets/js/example-micromodal.js"></script>
-<script src="/assets/js/example-selectWoo.js"></script>
-<script src="/assets/js/example-tippy.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/theme.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/jquery.min.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/jquery.dataTables.min.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/dataTables.responsive.min.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/dataTables.select.min.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/popper.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/tippy.umd.min.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/pikaday.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/selectWoo.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/dkfds.min.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/micromodal.min.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/example-datatables.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/example-pikaday.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/example-micromodal.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/example-selectWoo.js"></script>
+<script src="/dkfds-plugins-docs/assets/js/example-tippy.js"></script>
 </body>
 </html>
