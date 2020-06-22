@@ -5,6 +5,7 @@ layout: default
 menu:
   sidenav:
     weight: 3
+
 ---
 <div class="alert alert-error " role="alert">
   <div class="alert-body">
@@ -15,11 +16,13 @@ menu:
   </div>
 </div>
 
-##### Anvendes til
+{:.h3}
+## Anvendes til
 
 Når der er specifikt udvalgte datoer at vælge i mellem som fx ved bookninger og planlægning med åbne og lukkede datoer, og hvor det gavner brugeren at se hvilke ugedage forskellige datoer rammer.
 
-##### Anvendes ikke til
+{:.h3}
+## Anvendes ikke til
 
 Tidsangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="https://designsystem.dk/komponenter/dato-felt/" title="">datoangivelse</a>
 
