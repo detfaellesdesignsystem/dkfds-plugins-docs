@@ -26,7 +26,6 @@ github_username:  jekyll
 
 sass:
   load_paths:
-    - assets/style
     - node_modules
 gems:
   - jekyll-menus
