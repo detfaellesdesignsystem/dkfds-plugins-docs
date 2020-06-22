@@ -1,0 +1,67 @@
+
+ //Ul lists
+
+ ul {
+   padding-left: 0;
+   list-style-type: none;
+   color: $color-text;
+   line-height: $body-text-line-height;
+   li {
+     margin-top:map-get($spacers, 3);
+     list-style-type: none;
+     position: relative;
+     padding-left: map-get($spacers, 4);
+     line-height: $body-text-line-height;
+     &::before {
+       content: "\2022";
+       position: absolute;
+       left: 0px;
+       top: -1px;
+       font-size: 20px;
+     }
+   }
+ }
+//Ol lists
+ol {
+  padding-left: map-get($spacers, 505);
+  li{
+    margin-top: map-get($spacers, 3);
+    line-height: 2.4rem;
+  }
+}
+
+
+
+// Unstyled lists
+.unstyled-list {
+  @include unstyled-list;
+}
+
+ // No bullet lists
+ .nobullet-list {
+   @include nobullet-list;
+ }
+
+ // No indententation list
+ .noindent-list {
+   @include noindent-list;
+ }
+
+
+.inline-list {
+  @include unstyled-list;
+  > li {
+    display: block;
+
+    @include media-breakpoint-up(md) {
+      display: inline-block;
+    }
+  }
+
+  li + li{
+    margin-top: map-get($spacers, 305);
+    @include media-breakpoint-up(md) {
+      margin-top: 0;
+    }
+  }
+}

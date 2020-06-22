@@ -1,0 +1,71 @@
+fieldset {
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset ul{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+fieldset + fieldset{
+  margin-top: map-get($spacers, 5);
+}
+
+legend{
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    margin-bottom: 0px;
+  }
+}
+
+input, select, textarea {
+  //Input width with rem
+  &.input-width-xxs {
+    max-width: 8rem !important;
+    width: 100%;
+  }
+  &.input-width-xs {
+    max-width: 16rem !important;
+    width: 100%;
+  }
+  &.input-width-s {
+    max-width: 24rem !important;
+    width: 100%;
+  }
+  &.input-width-m {
+    max-width: 32rem !important;
+    width: 100%;
+  }
+  &.input-width-l {
+    max-width: 40rem !important;
+    width: 100%;
+  }
+  &.input-width-xl {
+    max-width: 48rem !important;
+    width: 100%;
+  }
+
+  //Input width with characters
+  &.input-char-4 {
+    max-width: calc(2px + 16px + 16px + 4ch);
+    width: 100%;
+  }
+  &.input-char-8 {
+    max-width: calc(2px + 16px + 16px + 8ch);
+    width: 100%;
+  }
+  &.input-char-11 {
+    max-width: calc(2px + 16px + 16px + 11ch);
+    width: 100%;
+  }
+  &.input-char-27 {
+    max-width: calc(2px + 16px + 16px + 27ch);
+    width: 100%;
+  }
+}
+
+.box-border-l{
+	padding-left: calc(#{map-get($spacers, 4)} - 4px);
+	border-left: 4px solid $color-gray-light;
+}

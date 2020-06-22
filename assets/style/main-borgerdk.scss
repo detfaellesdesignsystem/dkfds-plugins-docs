@@ -10,11 +10,11 @@ $image-path:        '/assets/img';
 $site-image-path:   '/assets/img';
 $icons-folder-path: '/assets/img/svg-icons';
 
-@import '../node_modules/dkfds/dist/scss/dkfds-borgerdk';
-@import '../node_modules/dkfds-plugins/dist/scss/dkfds-tippy-theme';
-@import '../node_modules/dkfds-plugins/dist/scss/dkfds-micromodal-theme';
-@import '../node_modules/dkfds-plugins/dist/scss/dkfds-datatables-theme';
-@import '../node_modules/dkfds-plugins/dist/scss/dkfds-pikaday-theme';
-@import '../node_modules/dkfds-plugins/dist/scss/dkfds-selectwoo-theme';
-@import '../assets/style/stylesheet';
+@import 'dkfds/dkfds-borgerdk';
+@import 'dkfds-tippy-theme';
+@import 'dkfds-micromodal-theme';
+@import 'dkfds-datatables-theme';
+@import 'dkfds-pikaday-theme';
+@import 'dkfds-selectwoo-theme';
+@import 'stylesheet';
 

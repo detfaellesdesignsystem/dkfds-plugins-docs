@@ -1,0 +1,28 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $color-white;
+  color: $color-black;
+  overflow-x: hidden;
+}
+
+// for IE < 11, see:
+// <http://caniuse.com/#feat=hidden>
+[hidden] {
+  display: none !important; 
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus, 
+.focus {
+  outline: $focus-outline;
+  outline-offset: $focus-spacing;
+}

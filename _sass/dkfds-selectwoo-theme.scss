@@ -1,0 +1,132 @@
+/*
+  Styling for selectWoo/select2 component.
+*/
+
+.select2, .select2-container{
+  z-index: 8000;
+  ul{
+    @include unstyled-list; //undo list stlying for lists inside select2
+  }
+}
+
+//Height if input area:
+.select2{
+  min-height: 40px;
+  margin-top: 8px;
+}
+.selection{
+  min-height: 40px;
+  display: block;
+}
+.select2-container .select2-selection--multiple{
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /%3E%3C/svg%3E"); //angle-arrow-down
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px);
+  border: $outer-border;
+  min-height: 40px;
+  padding: calc(8px - 1px) calc(16px - 1px) calc(8px - 5px);
+}
+
+//Writing area
+.select2-search.select2-search--inline{
+  margin-top: 0px;
+  .select2-search__field{
+    margin-top: 0px;
+  }
+}
+
+//Focus outline:
+.select2-container--focus{
+  outline: 4px solid $color-gray-003;
+  outline-offset: 0;
+}
+.select2-container--default .select2-selection--multiple ul.select2-selection__rendered{
+  padding: 0px;
+}
+
+//Choise
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+  background-color: black;
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 3px;
+  white-space: normal;
+}
+//Choise rmove icon
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+  color: white;
+  float: right;
+  margin-left: 4px;
+  &:hover{
+    color: white;
+  }
+}
+
+//Result dropdown::
+.select2-container.select2-container--default{
+
+  .select2-dropdown{
+    border: $outer-border;
+  }
+  .select2-results__options{
+    max-width: 100% !important;
+  }
+  //Result option:
+  .select2-results__option[role="option"]:not(.select2-results__option--load-more):not(.loading-results){ //Option Item
+    border-bottom: $inner-border;
+    padding-left: 48px;
+    padding-right: 16px;
+    padding-top: 8px;
+    position: relative;
+    padding-bottom: 8px;
+    color: $color-text;
+    &::before{ //Selected checkbox
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+      top: calc(50% - (20px - 10px));
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border: 2px solid black;
+      border-radius: 2px;
+      vertical-align: middle;
+    }
+    &[data-selected=true]::before{ //select back background
+      background-color: black;
+    }
+    &[data-selected=true]::after{ //selected white checkmark
+      content: "";
+      height: 7px;
+      width: 14px;
+      position: absolute;
+      left: calc(16px + 3px);
+      top: calc(50% - (20px - 10px));
+      box-shadow: -3px 3px 0px 0 #fff;
+      transform: rotate(-45deg);
+    }
+
+    &[data-selected=true]{
+      background-color: transparent;
+    }
+    &.select2-results__option--highlighted, &.select2-results__option--highlighted[data-selected=true]{
+      background-color: $color-gray-006;
+    }
+    &.select2-results__message{//No result message
+      padding-left: 8px;
+      &:before, &:after{
+        display: none;
+      }
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+  .select2-results__option.select2-results__option--load-more, .select2-results__option.loading-results, .select2-results__option.select2-results__message{
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+  }
+}

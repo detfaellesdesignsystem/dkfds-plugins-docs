@@ -1,0 +1,240 @@
+.sidenav-list {
+  @include unstyled-list();
+
+  ul{
+    @include unstyled-list();
+  }
+  border-bottom: $outer-border;
+  border-top: $outer-border;
+
+
+
+  a {
+    display: block;
+    border: none;
+    color: $color-neutral;
+    line-height: $base-line-height;
+    padding: $spacer;
+    padding-top:$input-top-bottom-padding;
+    padding-left: map-get($spacers, 4);
+    padding-right: map-get($spacers, 4);
+    text-decoration: none;
+    max-width: none;
+    &:focus {
+      outline-offset: 0;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  > li.current{
+    > a, > ul > li > a{
+      padding-left: calc(#{map-get($spacers, 4)} - #{$sidenav-active-border-width});
+    }
+  }
+  li {
+    &:hover {
+      background-color: $color-gray-pale;
+    }
+    a:hover {
+      text-decoration: none;
+      color: $sidenav-link-active-color;
+    }
+
+    a {
+      overflow:hidden;
+
+      ul {
+        width:100%
+      }
+
+      .sidenav-icon-before {
+        line-height: 23px;
+        text-align: left;
+      }
+
+      .sidenav-icon {
+        margin-left: auto;
+        width: 22px;
+        height: 22px;
+        line-height: 23px;
+        text-align: center;
+        float: right;
+
+        i {
+          color: #fff;
+        }
+      }
+
+
+      .sidenav-information {
+        color: $color-gray-medium-dark;
+        margin: 0;
+        display: block;
+      }
+
+      &:focus{
+        background-color: transparent;
+      }
+    }
+
+    &.current {
+      > a {
+        font-weight: $font-weight-medium;
+      }
+
+      .sidenav-information {
+        color: $color-gray-dark;
+        font-weight: normal;
+      }
+    }
+    &.active{
+      > a{
+        color: $sidenav-link-active-color;
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+
+  > li > ul > li > ul > li > a{
+    padding-left: map-get($spacers, 5);
+  }
+  > li > ul > li > ul > li > ul > li > a{
+    padding-left: map-get($spacers, 6);
+  }
+  > li > ul > li > ul > li > ul > li > ul > li > a{
+    padding-left: map-get($spacers, 7);
+  }
+  > li > ul > li > ul > li > ul > li > ul > li > ul > li > a{
+    padding-left: map-get($spacers, 8);
+  }
+
+  > li.has-anchor-links > ul > li > a{
+    padding-left: calc(#{map-get($spacers, 3)} * 4);
+  }
+  > li:not(.has-anchor-links) > ul > li.has-anchor-links > ul > li > a{
+    padding-left: calc(#{map-get($spacers, 3)} * 4);
+  }
+  > li:not(.has-anchor-links) > ul > li:not(.has-anchor-links) > ul > li.has-anchor-links > ul > li > a{
+    padding-left: calc(#{map-get($spacers, 3)} * 5);
+  }
+  > li:not(.has-anchor-links) > ul > li:not(.has-anchor-links) > ul > li:not(.has-anchor-links) > ul > li.has-anchor-links > ul > li > a{
+    padding-left: calc(#{map-get($spacers, 3)} * 6);
+  }
+  > li:not(.has-anchor-links) > ul > li:not(.has-anchor-links) > ul > li:not(.has-anchor-links) > ul > li:not(.has-anchor-links) > ul > li.has-anchor-links > ul > li > a{
+    padding-left: calc(#{map-get($spacers, 3)} * 7);
+  }
+
+  > li {
+    background-color: transparent;
+    font-size: $base-font-size;
+    border-top: $inner-border;
+
+    &.active > a{
+      color: $color-black;
+    }
+
+    &.current{
+      border-left: $sidenav-active-border-width solid $color-primary;
+      background-color: $color-gray-pale;
+    }
+    &:first-child {
+      border-top: none;
+    }
+    &:last-child {
+      a {
+        padding-bottom: $input-top-bottom-padding;
+      }
+    }
+    li{
+      border-top: $inner-inner-border;
+      font-size: $small-text;
+    }
+  }
+}
+.sidenav-list-locked {
+  @include unstyled-list();
+
+  > li {
+    border-top: $inner-border;
+    cursor:default;
+
+    &:first-child {
+      border-top: none;
+    }
+    &:last-child {
+      a {
+        padding-bottom: $spacer;
+      }
+    }
+  }
+
+
+  a {
+    border: none;
+    color: $sidenav-link-color;
+    display: block;
+    line-height: $base-line-height;
+    padding: $spacer;
+    padding-top:$input-top-bottom-padding;
+    padding-left: map-get($spacers, 4);
+    padding-right: map-get($spacers, 4);
+    text-decoration: none;
+
+
+    &:hover {
+      background-color: $color-white;
+      text-decoration: none;
+      color: $sidenav-link-color-hover;
+      cursor:default;
+    }
+
+    &:focus {
+      outline-offset: 0;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  li {
+    &.disabled {
+      cursor: not-allowed;
+      a {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.sidenav-sub_list {
+  @include unstyled-list();
+  margin: 0;
+  width: 100%;
+
+  li {
+    border: none;
+    &:last-child {
+      a {
+        padding-bottom: $spacer;
+      }
+    }
+  }
+
+  a {
+    padding-top: $spacer;
+    line-height: $base-line-height;
+  }
+  li:not(.has-anchor-links) .sidenav-sub_list {
+    a {
+      &:focus {
+        outline-offset: 0;
+      }
+    }
+  }
+
+}
+
+.sidebar-col{
+  @include media-breakpoint-up(md) {
+    flex: 0 0 300px; //300 = 3 columns width
+  }
+}

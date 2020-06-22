@@ -1,0 +1,34 @@
+.search {
+  display: flex;
+  
+  .form-input{
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    &:focus{
+      z-index: 1;
+    }
+  }
+
+  .button-search{
+    background-color: #fff;
+    border-width: 1px;
+    border-color: $color-gray-medium-dark;
+    border-left: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    color: $color-text;
+    font-weight: 400;
+    width: inherit; //not 100& width on mobile
+    &:hover{
+      background-color: $color-gray-mediumpale;
+    }
+  }
+}
+
+// Extra specificity to override rules set in reset.css.
+input[type=search] { /* stylelint-disable-line selector-no-qualifying-type */
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none; //Fixes border-radius bug on iPhone X Safari. 
+}

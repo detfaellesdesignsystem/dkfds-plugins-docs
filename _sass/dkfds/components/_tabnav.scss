@@ -1,0 +1,116 @@
+
+.tabnav {
+  @extend .accordion;
+  @include media-breakpoint-up(md) {
+    @include unstyled-list;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  > button {
+    max-width: none;
+
+    @extend .accordion-button;
+    text-decoration: none;
+    margin-bottom: map-get($spacers, 3);
+
+    &[aria-selected=true]{
+      background-color: $color-gray-mediumpale;
+    }
+
+    &[aria-selected=false]{
+      @include accordion-button-unopened-styles;
+      border-radius: $border-radius $border-radius $border-radius $border-radius;
+
+      &:focus{
+        background-color: $background-alternative;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      display: inline-block;
+      width: auto;
+      color: $color-gray-001;
+      text-align: center;
+      text-decoration: none;
+      padding: 0px;
+      background-color: transparent;
+      border-radius: 0px;
+      line-height: normal;
+      padding-top: map-get($spacers, 3);
+      padding-bottom: map-get($spacers, 3);
+      padding-left: map-get($spacers, 5);
+      padding-right: map-get($spacers, 5);
+      margin: 0 map-get($spacers, 2) map-get($spacers, 2) 0px;
+      text-decoration: underline;
+      border-top: map-get($spacers, 2) solid $color-white;
+
+      &[aria-selected=false]{
+        background-color: $background-alternative;
+        background-image: none;
+        border-radius: 0px;
+      }
+
+      &:hover {
+          background-color: $color-gray-mediumpale;
+      }
+
+      &:focus{
+        outline: none;
+        span{
+          outline: $focus-outline;
+        }
+      }
+
+      &[aria-selected=true] {
+        background-color: $color-white;
+        background-image: none;
+        border: $outer-border;
+        padding-left: calc(#{map-get($spacers, 5)} - 1px);
+        padding-right: calc(#{map-get($spacers, 5)} - 1px);
+        border-bottom: 1px solid $color-white;
+        border-radius: 0px;
+        text-decoration: none;
+        margin: 0 map-get($spacers, 2) -1px 0px;
+        padding-bottom: calc(#{map-get($spacers, 3)} + 2px);
+        position: relative;
+        z-index: 350;
+        span:not(.sr-only) {
+          display: block;
+        }
+      }
+
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    > button:last-of-type{
+      margin-right: map-get($spacers, 3);
+    }
+  }
+
+  &-panel{
+    @extend .accordion-content;
+    @include media-breakpoint-up(md) {
+      display: none;
+      border: $outer-border;
+      overflow: hidden;
+      margin-bottom: calc(#{map-get($spacers, 4)});
+      background-color: transparent;
+      position: relative;
+      z-index: 300;
+
+      &:focus{
+        outline: $focus-outline;
+        outline-offset: 1px;
+      }
+    }
+    &[aria-hidden=false]{
+      display: block;
+      order: 1000;
+      width: 100%;
+    }
+  }
+}
