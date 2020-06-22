@@ -9,7 +9,7 @@ menu:
 ---
 <div class="alert alert-warning">
 <div class="alert-body">
-<p class="alert-heading">Support fås hos udbyderen, ikke hos FOS</p>
+<p class="alert-heading">Support fås hos udbyderen, ikke hos FDS</p>
 <p class="alert-text">Bruger man plugins skal de styles, så de visuelt passer ind i designsystemet. Support får man hos udbyderen af pluginnet.</p>
 <p class="alert-text">Siden her rummer eksempler på hvordan plugins kan styles så de passer ind.</p>
 </div>
