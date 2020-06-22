@@ -43,7 +43,7 @@ Det må antages at det er et begrænset antal selvbetjeningsløsninger som har b
 
 På dette designsystem.dk er multiselect funktionaliteten en del af javascript filen `dkfds-selectwoo-example.js`, denne fil har kun til formål at vise funktionaliteten på dette designsystem.dk, og skal ikke inkluderes i selve selvbetjeningsløsningen.
 
-<a href="[https://github.com/detfaellesdesignsystem/dkfds-plugins-docs/blob/master/assets/js/example-selectWoo.js](https://github.com/detfaellesdesignsystem/dkfds-plugins-docs/blob/master/assets/js/example-selectWoo.js "https://github.com/detfaellesdesignsystem/dkfds-plugins-docs/blob/master/assets/js/example-selectWoo.js")" class="icon-link">Se vores eksempel på implementering i JavaScript i Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
+<a href="https://github.com/detfaellesdesignsystem/dkfds-plugins-docs/blob/master/assets/js/example-selectWoo.js" class="icon-link">Se vores eksempel på implementering i JavaScript i Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
 
 ## Standard
 
