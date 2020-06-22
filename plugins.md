@@ -5,6 +5,17 @@ permalink: "/"
 menu:
   sidenav:
     weight: 1
-
 ---
-Hej
+
+<div class="alert alert-warning">
+    <div class="alert-body">
+        <p class="alert-heading">Support fås hos udbyderen, ikke hos FOS</p>
+        <p class="alert-text">Bruger man plugins skal de styles, så de visuelt passer ind i designsystemet. Support får man hos udbyderen af pluginnet.</p>
+        <p class="alert-text">Siden her rummer eksempler på hvordan plug-ins kan styles så de passer ind.</p>
+    </div>
+</div>
+
+# Plugins
+
+{:.font-lead}
+Du må bruge de plug-ins du vil, sålænge de lever op til kravene om tilgængelighed. De plug-ins vi viser her er kun eksempler på hvordan det kan gøres. 

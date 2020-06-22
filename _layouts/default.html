@@ -2,8 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/style/main.css">
+
+    <link rel="preload" href="/assets/fonts/IBMPlexSans/IBMPlexSans-Medium.woff" as="font" crossorigin>
+    <link rel="preload" href="/assets/fonts/IBMPlexSans/IBMPlexSans-Bold.woff" as="font" crossorigin>
+    <link rel="preload" href="/assets/fonts/IBMPlexSans/IBMPlexSans-Regular.woff" as="font" crossorigin>
+    <link rel="preload" href="/assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.woff" as="font" crossorigin>
+    <link rel="preload" href="/assets/js/theme.js" as="script">
+    <link rel="preload" href="/assets/style/main-virk.css" as="style">
+    <link rel="preload" href="/assets/style/main-borgerdk.css" as="style">
+    <link rel="stylesheet" href="/assets/style/dataTables.css">
+    <link rel="stylesheet" href="/assets/style/selectWoo.css">
+    <link rel="stylesheet" href="/assets/style/tippy.css">
+    <style>
+        body {
+            opacity: 0; /*hide page until theme is downloaded by js.*/
+        }
+
+        /* Fixes Edge bug, where list-style-type:none is ignored if it's set after li has been hidden. It must be present at pageload to work.*/
+        ul {
+            list-style-type: none;
+        }
+    </style>
 </head>
 <body>
 <div class="hide-base-svg">
@@ -15,8 +36,8 @@
     <div class="solution-header">
         <div class="container solution-header-inner">
             <!-- Start: Løsningstitel -->
-            <div class="solution-heading">
-                <a href="#">FDS/plugins</a><span class="badge badge-large badge-error">Deprecated (ikke længere understøttet)</span>
+            <div class="solution-heading d-flex align-items-center">
+                <a href="#">FDS/plugins</a><span class="badge badge-large badge-error ml-4">Deprecated (ikke længere understøttet)</span>
             </div>
             <!-- Slut: Løsningstitel -->
         </div>
@@ -38,7 +59,15 @@
             </nav>
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
-            <h1>{{ page.title }}</h1>
+            <div aria-label="Vælg et tema" role="alert" class="alert alert-info has-close mt-4 d-none" id="themeAlert">
+                <div class="alert-body">
+                    <p class="alert-heading pr-7">Vælg et tema</p><a href="javascript:void(0);" class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</a>
+                    <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
+                    <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
+                    <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
+                </div>
+            </div>
+            {% if page.url != "/"%}<h1>{{ page.title }}</h1>{% endif %}
             <section>
                 {{ content }}
             </section>
@@ -51,12 +80,28 @@
             <ul class="unstyled-list inline-list">
                 <li><span class="h5 weight-semibold">Digitaliseringsstyrelsen &amp; Erhvervsstyrelsen</span></li>
                 <li><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>FDS@erst.dk</a></li>
-                <li><a href="/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
+                <li><a href="https://designsystem.dk/omdesignsystemet/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
                 <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
                 <li><a href="javascript:void(0)" class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText">Skift til Borger.dk tema</span></a></li>
             </ul>
         </div>
     </div>
 </footer>
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/dataTables.responsive.min.js"></script>
+<script src="/assets/js/dataTables.select.min.js"></script>
+<script src="/assets/js/popper.js"></script>
+<script src="/assets/js/tippy.umd.js"></script>
+<script src="/assets/js/pikaday.js"></script>
+<script src="/assets/js/selectWoo.js"></script>
+<script src="/assets/js/dkfds.min.js"></script>
+<script src="/assets/js/micromodal.min.js"></script>
+<script src="/assets/js/example-datatables.js"></script>
+<script src="/assets/js/example-pikaday.js"></script>
+<script src="/assets/js/example-micromodal.js"></script>
+<script src="/assets/js/example-selectWoo.js"></script>
+<script src="/assets/js/example-tippy.js"></script>
 </body>
 </html>

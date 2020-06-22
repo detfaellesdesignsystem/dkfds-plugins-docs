@@ -1,0 +1,20 @@
+---
+---
+
+body {
+  opacity: 1 !important;
+}
+
+$font-path:         '/assets/fonts/IBMPlexSans/';
+$image-path:        '/assets/img';
+$site-image-path:   '/assets/img';
+$icons-folder-path: '/assets/img/svg-icons';
+
+@import 'dkfds/dist/scss/dkfds-borgerdk';
+@import 'dkfds-plugins/dist/scss/dkfds-tippy-theme';
+@import 'dkfds-plugins/dist/scss/dkfds-micromodal-theme';
+@import 'dkfds-plugins/dist/scss/dkfds-datatables-theme';
+@import 'dkfds-plugins/dist/scss/dkfds-pikaday-theme';
+@import 'dkfds-plugins/dist/scss/dkfds-selectwoo-theme';
+@import '../assets/style/stylesheet';
+
