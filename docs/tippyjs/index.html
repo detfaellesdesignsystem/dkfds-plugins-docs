@@ -107,11 +107,13 @@
 
 <p>Tippy.js er et tredjeparts bibliotek, som du selv skal hente ind i dit projekt. Vi har lavet et tema i dkfds-plugins pakken, som kan lægges ind over således at pluginnet følger det visuelle udtryk i Det Fælles Designsystem.</p>
 
-<p>Installer dkfds-plugins fra npm og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt. For mere info, se siden <a href="https://designsystem.dk/kode/implementering/">Implementering af DKFDS</a>.</p>
+<p>Installer <a href="https://www.npmjs.com/package/dkfds-plugins" class="icon-link">dkfds-plugins fra npm<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a> og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt.</p>
 
 <p>Stien til tema-filen du skal inkludere for Tippy.js er henholdsvis <code class="highlighter-rouge">[path-to-plugins-project]/dist/css/dkfds-tippy-theme.standalone.min.css</code> for CSS filen og <code class="highlighter-rouge">~dkfds-plugins/dist/scss/dkfds-tippy-theme</code> for SCSS filen.</p>
 
 <p>Man skal dog stadig inkludere Tippys egen CSS og JavaScript. Følg <a href="https://atomiks.github.io/tippyjs/" class="icon-link">Tippys egen dokumentation<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a> for implementering af pluginnet i dit projekt.</p>
+
+<h2 id="standard">Standard</h2>
 
 <div class="example-container p-4 ">
     <a href="javascript:void(0)" class="js-tippy" data-tippy-content="Dette er en hjælpetekst i en tooltip"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#help-circle-outline"></use></svg><span class="sr-only">Dette er tooltipteksten til skærmlæsere</span></a>
@@ -119,6 +121,7 @@
 </div>
 
 <h2 id="position">Position</h2>
+
 <div class="example-container p-4 ">
     <!-- Placering: top -->
 <button class="mt-8 button button-primary js-tippy" data-tippy-placement="top" data-tippy-content="Top tooltip">Top <span class="sr-only">Dette er tooltipteksten til skærmlæsere,
@@ -140,6 +143,7 @@
 </div>
 
 <h2 id="ikon-med-popover-kræver-tryk">Ikon med popover (kræver tryk)</h2>
+
 <div class="example-container p-4 ">
     <a href="javascript:void(0)" class="popover js-tippy" data-tippy-trigger="click" data-tippy-content="Dette er en hjælpetekst i en popover"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#help-circle-outline"></use></svg><span class="sr-only">Dette er tooltipteksten til skærmlæsere,
         popover</span></a>
