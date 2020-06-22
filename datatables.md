@@ -18,7 +18,6 @@ Datatables er et eksternt plugin, hvormed man kan udvide sin tabel med sortering
 
 Avancerede tabeller med behov for at tilknytte udvidet interaktion som fx søgning og editering af felt-indhold.
 
-
 {:.h3}
 ## Anvendes ikke til
 
