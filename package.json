@@ -8,7 +8,7 @@
     "publish": "ncp _site docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "bundle exec jekyll serve",
-    "deploy": "bundle exec jekyll build"
+    "deploy": "bundle exec jekyll build && ncp _site docs"
   },
   "repository": {
     "type": "git",

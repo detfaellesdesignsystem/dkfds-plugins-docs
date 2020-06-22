@@ -4,7 +4,6 @@ git config user.email "$USER_EMAIL"
 git checkout master
 git pull origin master
 
-mv _site/* docs
 rm -R _site/
 rm -R node_modules
 
