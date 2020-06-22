@@ -14,7 +14,7 @@ Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller fører
 
 Tippy.js er et tredjeparts bibliotek, som du selv skal hente ind i dit projekt. Vi har lavet et tema i dkfds-plugins pakken, som kan lægges ind over således at pluginnet følger det visuelle udtryk i Det Fælles Designsystem.
 
-Installer <a href="https://www.npmjs.com/package/dkfds-plugins" class="icon-link">dkfds-plugins fra npm<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a> og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt.
+Installér <a href="https://www.npmjs.com/package/dkfds-plugins" class="icon-link">dkfds-plugins fra npm<svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#open-in-new"></use></svg></a> og inkludér enten CSS eller SCSS filen for pluginnet i dit projekt.
 
 Stien til tema-filen du skal inkludere for Tippy.js er henholdsvis `[path-to-plugins-project]/dist/css/dkfds-tippy-theme.standalone.min.css` for CSS filen og `~dkfds-plugins/dist/scss/dkfds-tippy-theme` for SCSS filen.
 
