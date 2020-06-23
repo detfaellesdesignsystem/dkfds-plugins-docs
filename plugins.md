@@ -21,8 +21,9 @@ menu:
 Du må bruge de plug-ins du vil, sålænge de lever op til kravene om tilgængelighed. De plugins vi viser her er kun eksempler på hvordan det kan gøres.
 
 {:.nobullet-list .d-lg-none}
-- <a href="dkfds-plugins-docs/datatables/">Datatables</a>
-- <a href="dkfds-plugins-docs/pikaday/">Pikaday</a>
-- <a href="dkfds-plugins-docs/micromodaljs/">Micromodal.js</a>
-- <a href="dkfds-plugins-docs/selectwoo/">selectWoo</a>
-- <a href="dkfds-plugins-docs/tippyjs/">Tippy.js</a>
+
+* <a href="/dkfds-plugins-docs/datatables/">Datatables</a>
+* <a href="/dkfds-plugins-docs/pikaday/">Pikaday</a>
+* <a href="/dkfds-plugins-docs/micromodaljs/">Micromodal.js</a>
+* <a href="/dkfds-plugins-docs/selectwoo/">selectWoo</a>
+* <a href="/dkfds-plugins-docs/tippyjs/">Tippy.js</a>
