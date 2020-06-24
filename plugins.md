@@ -5,7 +5,7 @@ permalink: "/"
 menu:
   sidenav:
     weight: 1
-
+lastUpdated: "Senest opdateret juni 2020"
 ---
 <div class="alert alert-warning">
 <div class="alert-body">

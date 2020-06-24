@@ -5,7 +5,7 @@ layout: default
 menu:
   sidenav:
     weight: 3
-
+lastUpdated: "Senest opdateret juni 2020"
 ---
 <div class="alert alert-error " role="alert">
   <div class="alert-body">
