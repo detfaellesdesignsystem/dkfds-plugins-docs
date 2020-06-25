@@ -2,7 +2,7 @@
 title: selectWoo
 permalink: "/selectwoo/"
 layout: default
-lastUpdated: "Senest opdateret juni 2020"
+lastUpdated: "Senest opdateret marts 2019"
 menu:
   sidenav:
     weight: 5
