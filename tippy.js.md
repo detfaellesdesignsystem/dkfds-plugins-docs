@@ -2,10 +2,10 @@
 title: Tippy.js
 permalink: "/tippyjs/"
 layout: default
+lastUpdated: "Senest opdateret juni 2020"
 menu:
   sidenav:
     weight: 6
-lastUpdated: "Senest opdateret juni 2020"
 ---
 {:.font-lead}
 Tooltip og popover er komponenter, som brugerne enten kan aktiverer eller fører musen hen over for at få en kort forklaring på indhold, ord eller begreber.

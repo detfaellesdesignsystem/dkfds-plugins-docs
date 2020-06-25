@@ -2,10 +2,10 @@
 title: selectWoo
 permalink: "/selectwoo/"
 layout: default
+lastUpdated: "Senest opdateret juni 2020"
 menu:
   sidenav:
     weight: 5
-lastUpdated: "Senest opdateret juni 2020"
 ---
 {:.font-lead}
 selectWoo er et eksternt plugin, hvormed man kan gøre det muligt for brugeren at vælge flere elementer fra en lang liste.

@@ -6,7 +6,6 @@ lastUpdated: Senest opdateret november 2019
 menu:
   sidenav:
     weight: 2
-
 ---
 {:.font-lead}
 Datatables er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.
