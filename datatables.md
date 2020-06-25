@@ -2,10 +2,11 @@
 layout: default
 title: Datatables
 permalink: "/datatables/"
+lastUpdated: Senest opdateret november 2019
 menu:
   sidenav:
     weight: 2
-lastUpdated: "Senest opdateret juni 2020"
+
 ---
 {:.font-lead}
 Datatables er et eksternt plugin, hvormed man kan udvide sin tabel med sortering, filtrering etc.
