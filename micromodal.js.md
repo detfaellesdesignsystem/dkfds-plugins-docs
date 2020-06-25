@@ -2,10 +2,11 @@
 title: Micromodal.js
 permalink: "/micromodaljs/"
 layout: default
-lastUpdated: "Senest opdateret juni 2020"
+lastUpdated: Senest opdateret juli 2019
 menu:
   sidenav:
     weight: 4
+
 ---
 {:.font-lead}
 Modalvinduer er separate vinduer, som popper-up, når du aktiverer dem. De indeholder typisk afgrænset viden og kommer i to former: Åben modal (aktiv) indeholder tekst og link, som brugeren kan handle på. Åben modal (passiv) indeholder kun tekst, som brugeren kan læse.
