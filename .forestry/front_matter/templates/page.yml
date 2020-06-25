@@ -11,6 +11,12 @@ fields:
 - type: text
   name: layout
   label: layout
+- name: lastUpdated
+  type: text
+  config:
+    required: false
+  label: Last Updated
+  hidden: false
 pages:
 - micromodal.js.md
 - pikaday.md
