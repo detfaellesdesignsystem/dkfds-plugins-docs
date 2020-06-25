@@ -2,10 +2,11 @@
 title: Pikaday
 permalink: "/pikaday/"
 layout: default
-lastUpdated: "Senest opdateret juni 2020"
+lastUpdated: Senest opdateret marts 2019
 menu:
   sidenav:
     weight: 3
+
 ---
 <div class="alert alert-error " role="alert">
   <div class="alert-body">
