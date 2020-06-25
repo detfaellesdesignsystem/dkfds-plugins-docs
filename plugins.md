@@ -5,6 +5,7 @@ permalink: "/"
 menu:
   sidenav:
     weight: 1
+
 ---
 <div class="alert alert-warning">
 <div class="alert-body">
@@ -13,9 +14,6 @@ menu:
 <p class="alert-text">Siden her rummer eksempler på hvordan plugins kan styles så de passer ind.</p>
 </div>
 </div>
-
-{:.h6}
-Senest opdateret juni 2020
 
 # Plugins
 
