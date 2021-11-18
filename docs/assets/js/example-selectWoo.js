@@ -13,7 +13,8 @@ class selectwooExamples {
             placeholder: "Vælg et element på listen",
             data: countries,
             width: "100%",
-            language: "da"
+            language: "da",
+            closeOnSelect: false
         });
         $(jsSelectorSelectwoo_Example1).removeClass('d-none'); //avoid flash of unstyled content.
 
@@ -22,6 +23,7 @@ class selectwooExamples {
             multiple: true,
             placeholder: "Vælg et element på listen",
             width: "100%",
+            closeOnSelect: false,
             language: {
                 "noResults": function(){
                     return "Ingen resultater fundet";
@@ -50,7 +52,8 @@ class selectwooExamples {
             multiple: true,
             placeholder: "Vælg et element på listen",
             width: "100%",
-            language: "da"
+            language: "da",
+            closeOnSelect: false
         });
         $(jsSelectorSelectwoo_Example3).removeClass('d-none'); //avoid flash of unstyled content.
 
